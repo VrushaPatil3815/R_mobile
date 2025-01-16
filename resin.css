@@ -35,14 +35,14 @@ body, html {
 .logo img:hover {
     transform: scale(1.1);
 }
-
+/*
 .details h1 {
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5rem;
     margin: 10px 0;
     color: #080808;
 }
-
+*/
 .details h2 {
     font-family:'Times New Roman', Times, serif;
     font-size: 1.8rem;
@@ -52,19 +52,25 @@ body, html {
 
 .details h3 {
     position: relative;
-    top: 120px;
+    top: 50px;
 
 }
 
 .details h4 {
     position: relative;
-    top: 110px;
+    top: 40px;
 
+}
+
+.art {
+    position: relative;
+    top: 445px;
+    color: #522727;
 }
 
 .details p {
     position:absolute;
-    bottom: 5px; /* Aligns the text at the bottom */
+    bottom: 100px; /* Aligns the text at the bottom */
     left: 0px;
     width: 100%; 
     text-align: center; 
@@ -84,6 +90,8 @@ body, html {
 
 }
 */
+
+
 .details a {
     
     color: #222121;
@@ -286,33 +294,7 @@ footer {
     color: rgb(28, 1, 1);
 
 }
-@media (max-width: 768px) {
-    .product-card {
-        flex: 1 1 calc(50% - 40px);
-        max-width: calc(50% - 40px);
-    }
 
-    header p {
-        color: rgb(247, 242, 242);
-
-    }
-
-    footer {
-        
-        position: absolute;
-        top: 3400px;
-    }
-
-    footer h4 {
-        color: rgb(246, 250, 254);
-    }
-}
-@media (max-width: 480px) {
-    .product-card {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-}
 
 
 /* Responsive Design */
@@ -366,4 +348,33 @@ footer {
         bottom:5px ;
 
     }
+    .product-card {
+        flex: 1 1 calc(50% - 40px);
+        max-width: calc(50% - 40px);
+    }
+
+    .product-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    header {
+        background-image: url('image/B5.png');
+    }
+
+    
+
+    footer {
+        background-image: url('image/B5.png');
+        position: absolute;
+        top: 3400px;
+    }
+
+    footer h4 {
+        color: #4a2323;
+        font-style: italic;
+    }
+
+    
+
 }
