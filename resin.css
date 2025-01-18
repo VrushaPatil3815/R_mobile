@@ -93,7 +93,7 @@ html {
 .flowing-color {
     font-size: 4rem;
     font-weight: bold;
-    background: linear-gradient(90deg, #FFD700,#236c16,#000000,#820849,#732509,#075d5d,#9400D3);
+    background: linear-gradient(90deg, #FFD700, #236c16, #000000, #820849, #d65757, #732509, #075d5d, #9400D3);
     background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -117,14 +117,14 @@ html {
     position: relative;
     top: 50px;
 
-  }
+}
 
-  .instagram-logo:hover {
+.instagram-logo:hover {
     transform: scale(1.2);
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
-  }
+}
 
-  .youtube-logo {
+.youtube-logo {
     width: 40px;
     height: 40px;
     transition: transform 0.3s ease, filter 0.3s ease;
@@ -132,12 +132,12 @@ html {
     top: 50px;
     right: 10px;
 
-  }
+}
 
-  .youtube-logo:hover {
+.youtube-logo:hover {
     transform: scale(1.2);
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
-  }
+}
 
 .art {
     position: relative;
@@ -147,14 +147,15 @@ html {
 
 .details p {
     position: absolute;
-    bottom: 50px;
+    bottom: 90px;
     /* Aligns the text at the bottom */
     left: 0px;
     width: 100%;
     text-align: center;
 
-    font-size:medium;
-    color: #1b1717;
+    font-size: larger;
+    color: #031501;
+
 }
 
 /*
@@ -178,32 +179,34 @@ html {
 }
 
 
-    /* Instagram Logo */
-    .instagram {
-        background: radial-gradient(circle at 30% 30%, #fdf497, #fdf497, #fd5949, #d6249f, #285AEB);
-      }
-      .instagram::before {
-        content: '';
-        width: 60%;
-        height: 60%;
-        background: white;
-        border-radius: 50%;
-      }
-  
-      /* YouTube Logo */
-      .youtube {
-        background-color: #FF0000;
-        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-        position: relative;
-      }
-      .youtube::before {
-        content: '';
-        width: 50%;
-        height: 50%;
-        background-color: white;
-        clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
-        position: absolute;
-      }
+/* Instagram Logo */
+.instagram {
+    background: radial-gradient(circle at 30% 30%, #fdf497, #fdf497, #fd5949, #d6249f, #285AEB);
+}
+
+.instagram::before {
+    content: '';
+    width: 60%;
+    height: 60%;
+    background: white;
+    border-radius: 50%;
+}
+
+/* YouTube Logo */
+.youtube {
+    background-color: #FF0000;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    position: relative;
+}
+
+.youtube::before {
+    content: '';
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    position: absolute;
+}
 
 /*.backside {
     position: absolute;
@@ -321,9 +324,13 @@ footer {
     font-weight: bolder;
 }
 
-footer a {
+footer a:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+
     color: #0f0f0f;
     text-decoration: none;
+
 
 }
 
@@ -413,6 +420,7 @@ footer {
     color: rgb(28, 1, 1);
 
 }
+
 
 
 
