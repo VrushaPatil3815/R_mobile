@@ -36,6 +36,8 @@ html {
     padding: 3px;
     border-radius: 2000px;
     background: rgba(4, 13, 32, 0.6);
+    position: relative;
+    bottom: 30px;
 
 }
 
@@ -139,13 +141,13 @@ html {
 
 .art {
     position: relative;
-    top: 470px;
+    top: 460px;
     color: #522727;
 }
 
 .details p {
     position: absolute;
-    bottom: 100px;
+    bottom: 80px;
     /* Aligns the text at the bottom */
     left: 0px;
     width: 100%;
