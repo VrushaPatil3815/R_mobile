@@ -1,5 +1,6 @@
 /* General Reset */
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
@@ -8,7 +9,8 @@ body, html {
 
 /* Main Page */
 .main-page {
-    background-image: url('image/B1.jpg'); /* Replace with the path to your image */
+    background-image: url('image/B1.jpg');
+    /* Replace with the path to your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,22 +21,28 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
     height: 100vh;
 
     text-align: center;
 }
 
-.logo img {
+.log img {
     width: 250px;
-    height: 150px;
+    height: 160px;
     cursor: pointer;
     transition: transform 0.3s;
+    backdrop-filter: blur(2px);
+    padding: 3px;
+    border-radius: 2000px;
+    background: rgba(4, 13, 32, 0.6);
+
 }
 
-.logo img:hover {
+.log img:hover {
     transform: scale(1.1);
 }
+
 /*
 .details h1 {
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -43,41 +51,110 @@ body, html {
     color: #080808;
 }
 */
-.details h2 {
-    font-family:'Times New Roman', Times, serif;
-    font-size: 1.8rem;
+.jumping-words span {
+    display: inline-block;
+    animation: jump 1s ease-in-out infinite;
+}
+
+.jumping-words span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.jumping-words span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.jumping-words span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+@keyframes jump {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+.details h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
     margin: 5px 0;
     color: #360101;
 }
 
-.details h3 {
+.flowing-color {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #FFD700,#236c16,#000000,#820849,#732509,#075d5d,#9400D3);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: flow 3s linear infinite;
+}
+
+@keyframes flow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.instagram-logo {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, filter 0.3s ease;
     position: relative;
     top: 50px;
 
-}
+  }
 
-.details h4 {
+  .instagram-logo:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+  }
+
+  .youtube-logo {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, filter 0.3s ease;
     position: relative;
-    top: 40px;
+    top: 50px;
+    right: 10px;
 
-}
+  }
+
+  .youtube-logo:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+  }
 
 .art {
     position: relative;
-    top: 445px;
+    top: 470px;
     color: #522727;
 }
 
 .details p {
-    position:absolute;
-    bottom: 100px; /* Aligns the text at the bottom */
+    position: absolute;
+    bottom: 100px;
+    /* Aligns the text at the bottom */
     left: 0px;
-    width: 100%; 
-    text-align: center; 
- 
-    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+
+    font-size:medium;
     color: #1b1717;
 }
+
 /*
 .details p1 {
     position: absolute;
@@ -93,10 +170,39 @@ body, html {
 
 
 .details a {
-    
+
     color: #222121;
     text-decoration: none;
 }
+
+
+    /* Instagram Logo */
+    .instagram {
+        background: radial-gradient(circle at 30% 30%, #fdf497, #fdf497, #fd5949, #d6249f, #285AEB);
+      }
+      .instagram::before {
+        content: '';
+        width: 60%;
+        height: 60%;
+        background: white;
+        border-radius: 50%;
+      }
+  
+      /* YouTube Logo */
+      .youtube {
+        background-color: #FF0000;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        position: relative;
+      }
+      .youtube::before {
+        content: '';
+        width: 50%;
+        height: 50%;
+        background-color: white;
+        clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+        position: absolute;
+      }
+
 /*.backside {
     position: absolute;
     top: 0;
@@ -110,7 +216,7 @@ body, html {
 
 /* Products Page */
 .products-page {
-    display:contents;
+    display: contents;
     /*flex-wrap: wrap;
     gap: 16px;*/
     justify-content: center;
@@ -118,7 +224,7 @@ body, html {
     padding: 20px;
     z-index: 2;
     text-align: center;
-   
+
 }
 
 .background-logo {
@@ -141,19 +247,19 @@ body, html {
     font-size: 2.5rem;
     margin-bottom: 40px;
     color: #333;
-    font-family:Algerian Regular;
+    font-family: Algerian Regular;
 }
 
-.block{
-    display:flex;
+.block {
+    display: flex;
     position: absolute;
     left: 300px;
     padding: 0%;
-    
+
 }
 
 .product {
-    
+
     margin: 20px 0;
     text-align: center;
 }
@@ -174,14 +280,14 @@ body, html {
     font-size: 1.5rem;
     margin: 10px 0;
     color: #050505;
-    
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .product button {
     background-color: #8fc0ea;
     color: rgb(31, 30, 30);
-    border:#080808;
+    border: #080808;
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
@@ -200,6 +306,7 @@ body, html {
     background-color: #5b2222;
     border-radius: 25px 20px;
 }
+
 /* Footer */
 footer {
     position: absolute;
@@ -215,7 +322,7 @@ footer {
 footer a {
     color: #0f0f0f;
     text-decoration: none;
-    
+
 }
 
 /*for frame html*/
@@ -229,11 +336,13 @@ header {
     text-align: center;
     padding: 1rem 0;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
+
 .product-card {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -245,24 +354,29 @@ header {
     max-width: calc(33.333% - 40px);
     box-sizing: border-box;
 }
+
 .product-card img {
     width: 100%;
     height: auto;
 }
+
 .product-details {
     padding: 15px;
     text-align: center;
 }
+
 .product-name {
     font-size: 1.2rem;
     font-weight: bold;
     margin: 10px 0;
 }
+
 .product-price {
     color: #28a745;
     font-size: 1.1rem;
     margin: 5px 0;
 }
+
 .cta {
     display: inline-block;
     padding: 10px 20px;
@@ -273,14 +387,17 @@ header {
     border-radius: 5px;
     font-weight: bold;
 }
+
 .cta:hover {
     background-color: #0056b3;
 }
+
 .grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 footer {
     background-image: url(image/c.jpg);
     background-size: cover;
@@ -299,10 +416,11 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .main-page{
+    .main-page {
         background-size: cover;
     }
-    .logo img {
+
+    .log img {
         width: 180px;
         height: 120px;
     }
@@ -315,15 +433,16 @@ footer {
         font-size: 1.5rem;
     }
 
-    
-    .products-page{
-        background-color:aliceblue ;
-        
 
-   }
+    .products-page {
+        background-color: aliceblue;
+
+
+    }
+
     .products-page h1 {
         position: relative;
-        top:0px ;
+        top: 0px;
 
     }
 
@@ -333,21 +452,25 @@ footer {
         max-width: 100px;
         margin-right: 300px;
     }
+
     .product img {
         position: relative;
-        bottom:0px ;
+        bottom: 0px;
         max-width: 250px;
     }
+
     .product h2 {
         position: relative;
-        bottom:5px ;
+        bottom: 5px;
 
     }
+
     .product button {
         position: relative;
-        bottom:5px ;
+        bottom: 5px;
 
     }
+
     .product-card {
         flex: 1 1 calc(50% - 40px);
         max-width: calc(50% - 40px);
@@ -362,7 +485,7 @@ footer {
         background-image: url('image/B5.png');
     }
 
-    
+
 
     footer {
         background-image: url('image/B5.png');
@@ -375,6 +498,6 @@ footer {
         font-style: italic;
     }
 
-    
+
 
 }
