@@ -93,7 +93,8 @@ html {
 .flowing-color {
     font-size: 4rem;
     font-weight: bold;
-    background: linear-gradient(90deg, #FFD700, #236c16, #000000, #820849, #d65757, #732509, #075d5d, #9400D3);
+    background: linear-gradient(90deg, #FFD700, #FFFFFF, #AE8625,#F7EF8A,#D2AC47,black,#EDC967, #DAA520,#FFDF00);
+    /*background: linear-gradient(90deg, #FFD700, #236c16, #000000, #820849, #d65757, #732509, #075d5d, #9400D3);*/
     background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
