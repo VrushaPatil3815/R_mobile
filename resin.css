@@ -314,10 +314,10 @@ html {
     border-radius: 25px 20px;
 }
 
-/* Footer */
+/* Footer 
 footer {
-    position: absolute;
-    top: 450px;
+    position: relative;
+    top: 700px;
     right: 690px;
     margin-top: 10px;
     font-size: 20px;
@@ -325,7 +325,7 @@ footer {
     font-family: Bell MT;
     font-weight: bolder;
 }
-
+*/
 footer img {
     position: relative;
     right:80px;
@@ -418,7 +418,7 @@ footer {
     background-image: url(image/c.jpg);
     background-size: cover;
     position: absolute;
-    top: 1700px;
+    top: 2700px;
     right: 0;
     left: 0;
     text-align: center;
