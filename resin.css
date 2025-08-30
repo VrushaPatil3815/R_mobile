@@ -93,7 +93,7 @@ html {
 .flowing-color {
     font-size: 4rem;
     font-weight: bold;
-    background: linear-gradient(90deg, #FFD700, #FFFFFF, #AE8625,#F7EF8A,#D2AC47,black,#EDC967, #DAA520,#FFDF00);
+    background: linear-gradient(90deg, #FFD700, #FFFFFF, #AE8625, #F7EF8A, #D2AC47, black, #EDC967, #DAA520, #FFDF00);
     /*background: linear-gradient(90deg, #FFD700, #236c16, #000000, #820849, #d65757, #732509, #075d5d, #9400D3);*/
     background-size: 300% 300%;
     -webkit-background-clip: text;
@@ -150,7 +150,7 @@ html {
 .details p {
     position: absolute;
     bottom: 90px;
-    
+
     left: 0px;
     width: 100%;
     text-align: center;
@@ -325,6 +325,25 @@ header {
     color: rgb(40, 16, 16);
     text-align: center;
     padding: 1rem 0;
+}
+
+p {
+    
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 350px;
+    right: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px 60px;
+    background-color: rgba(255, 255, 255, 0.85);
+    /* semi-transparent background */
+    color: #333;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
 }
 
 .container {
@@ -523,6 +542,25 @@ footer a:hover {
         position: relative;
         right: 65px;
     }
+
+    
+p {
+    
+   
+    position: absolute;
+    top: 950px;
+    right: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px 60px;
+    background-color: rgba(255, 255, 255, 0.85);
+    /* semi-transparent background */
+    color: #333;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+}
 
 
 
